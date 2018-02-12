@@ -1,0 +1,165 @@
+
+.head ul li{
+  padding: 10px;
+  margin:0;
+  font-family: Verdana;
+}
+.head ul > li:hover{
+  background-color: #808080;
+}
+.head ul ul > li:hover{
+  background-color: #00008B;
+}
+.head ul li, .head ul{
+  display: inline-block;
+}
+.head ul{
+position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    display: block;
+    margin: 0;
+    width: 100%;
+    min-width: 1024px;
+    height: 48px;
+    max-height: 44px;
+    background: #00008B;
+    background: rgba(0,0,0,0.8);
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+.head ul ul{
+  display: none;
+  position: absolute;
+  background-color: #00008B;
+  margin-top: 10px;
+  margin-left: -10px;
+
+}
+.head ul a{
+  color: #fff;
+  text-decoration: none;
+}
+
+@keyframes spin{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+.intro img{
+animation-name:spin;
+animation-duration:20s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+height: 438px;
+width: 438px;
+  }
+
+
+
+.intro{
+  padding-right: 10px;
+  padding-top: 40px;
+}
+.intro p{
+  font-family: Verdana;
+  text-align: justify;
+  color: #C8FE2E;
+}
+.intro img{
+padding-left: 35%;
+padding-right: 35%;
+padding-top: 9%;
+padding-bottom: 9%;
+max-height: 438px;
+max-width: 438px;
+}
+
+.table table {
+  table-layout: auto;
+  padding: 1%;
+}
+
+.table table tr td {
+    border: 1px solid black;}
+
+
+.table td{
+    text-align: center;
+    color: #C8FE2E;
+  font-family: Verdana;
+  color: #C8FE2E;
+}
+
+
+
+.UName input, .email input{
+    line-height: 30px;
+    border: 3px solid green;
+    padding: 5px;
+    width: 100%;
+}
+.button{
+      padding-left: 45%
+}
+
+.message textarea{
+    border: 3px solid green;
+    line-height: 50px;
+    padding-right: 10px;
+    width: 100%;
+    resize: vertical;
+}
+
+.form{
+    display: table-cell;  
+    color: whitesmoke;
+    width: 30%;
+    font-size: 130%;
+}
+
+.button input{
+    border: 2px solid white;
+    background: green;
+    height: 40px; 
+    color: whitesmoke;
+    font-size: 120%;
+    font-weight: bold;    
+}
+
+.button input:hover{
+    background: greenyellow;
+}
+
+
+input{
+    margin: 10px 0px 10px 0px;
+}
+
+
+  @media screen and (max-width: 700px){
+    body{
+    width: 100%;
+  }
+
+.intro img{
+  padding: 14%;
+  max-width: 240px;
+  max-height: 240px;
+
+
+}
+.table{
+  padding: 1%;
+}
+}
